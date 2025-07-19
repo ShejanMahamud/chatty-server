@@ -25,6 +25,12 @@ export class User {
 
   @Prop({ default: false })
   isDeleted: boolean;
+
+  @Prop()
+  verifyToken: string;
+
+  @Prop()
+  verifyTokenExp: Date;
 }
 
 export const userSchema = SchemaFactory.createForClass(User);
