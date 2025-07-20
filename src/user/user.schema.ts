@@ -31,6 +31,9 @@ export class User {
 
   @Prop()
   verifyTokenExp: Date;
+
+  @Prop()
+  refreshToken: string;
 }
 
 export const userSchema = SchemaFactory.createForClass(User);
